@@ -9,21 +9,12 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-   <!-- JSP파일과 Servlet 클래스 연동 방법 -->
   <servlet>
-  
-     <!-- servlet-name 태그 : 임의의 이름을 만들어 준다 -->
-     <servlet-name>test01</servlet-name>
-     
-     <!-- servlet-class 태그 : 클라이언트와 매핑할 서블릿의 이름을 지정 ==> 패키지명을 포함해서 기술 -->
-     <servlet-class>com.sist.AdderServlet</servlet-class>
+    <servlet-name>test01</servlet-name>
+    <servlet-class>com.sist.AdderServlet</servlet-class>
   </servlet>
-  
-  <!-- servlet-mapping 태그 : 클라이언트와 서블릿 매핑 -->
   <servlet-mapping>
-     <servlet-name>test01</servlet-name>
-     
-     <!-- url-pattern 태그 : 매핑할 서블릿의 별칭을 지정 ==> 반드시 /로 시작 -->
-     <url-pattern>/adder1</url-pattern>
+    <servlet-name>test01</servlet-name>
+    <url-pattern>/adder1</url-pattern>
   </servlet-mapping>
 </web-app>
